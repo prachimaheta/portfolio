@@ -1,6 +1,6 @@
 @import url('https://fonts.goggleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 :root{
-    --blue:hsla(230, 86%, 41%, 0.961);
+    --blue:hsla(242, 73%, 41%, 0.961);
 }
 *{
     font-family: 'Nunito', sans-serif;
@@ -40,8 +40,8 @@ section{
 }
 .btn{
     padding: .7rem 3rem;
-    background: #333;
-    color: #fff;
+    background: #f0ebeb;
+    color: #1b1a1a;
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -234,6 +234,55 @@ header .navbar ul li a:hover{
     border-radius: 7rem;
     padding: .6rem 4rem;
 }
+.achievements .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 5rem;
+}
+.achievements .box-container .box{
+    width:calc(50% - 3rem);
+    margin:4rem 1rem;
+   padding-left: 6rem;
+   border-left: .2rem solid #fff;
+   position: relative;
+}
+.achievements .box-container .box span{
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+.achievements .box-container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.achievements .box-container .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+.achievements .box-container .box i{
+    position: absolute;
+    top: -1.5rem; left:-2.5rem;
+    height:5rem;
+    width:5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--blue);
+}
+
+
+/* Update other CSS rules as needed */
+
+
 .contact .row{
     display: flex;
     align-items: center;
@@ -265,7 +314,6 @@ header .navbar ul li a:hover{
     color: var(--blue);
 
 }
-
 /*media queries */
 @media(max-width:1200px){
     html{
@@ -307,5 +355,7 @@ header .navbar ul li a:hover{
     .skills .box-container .box{
         width: 100%;
     }
-    
+    .achievements .box-container .box{
+        width:100%;
+    }
 }
